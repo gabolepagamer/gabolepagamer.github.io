@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro - Trabalho Persona</title>
+    <link rel="icon" type="image/png" href="C:\Users\User\Videos\TrabalhoDAW\icon.png">
+</head>
+<body bgcolor="black" text="white">
+
+    <hr>
+
+    <center>
+        <h1><font color="#ff3333" face="Arial">Cadastro de fã <u>supimpa</u> de Persona</font></h1>
+        <p>
+            <a href="TrabalhoPersona.html">Início</a> |
+            <a href="https://persona.atlus.com/" target="_blank">Site oficial</a>
+        </p>
+    </center>
+
+    <hr>
+
+    <p align="center">
+        Preencha o formulário abaixo para se cadastrar!
+
+    <form>
+        <fieldset>
+            <legend>Dados do visitante</legend>
+
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required>
+            </p>
+
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="senha">Senha para cadastro:</label><br>
+                <input type="password" id="senha" name="senha" minlength="6" required>
+            </p>
+
+            <p>
+                <label for="nascimento">Data de nascimento:</label><br>
+                <input type="date" id="nascimento" name="nascimento">
+            </p>
+
+            <p>
+                <label for="cor">Cor que mais combina com seu personagem favorito:</label><br>
+                <input type="color" id="cor" name="cor" value="#ff0000">
+            </p>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Perguntas Extras</legend>
+
+            <p>
+                <label for="jogo">Jogo favorito:</label><br>
+                <input type="text" id="jogo" name="jogo" list="lista-jogos">
+                <datalist id="lista-jogos">
+                    <option value="Persona 3 Reload">
+                    <option value="Persona 4 Golden">
+                    <option value="Persona 5 Royal">
+                    <option value="Persona 2: Innocent Sin">
+                </datalist>
+            </p>
+
+            <p>
+                Plataforma favorita:<br>
+                <input type="radio" id="playstation" name="plataforma" value="PlayStation">
+                <label for="playstation">PlayStation</label><br>
+                <input type="radio" id="pc" name="plataforma" value="PC">
+                <label for="pc">PC</label><br>
+                <input type="radio" id="switch" name="plataforma" value="Nintendo">
+                <label for="switch">Nintendo</label>
+            </p>
+
+            <p>
+                <input type="checkbox" id="noticias" name="noticias" value="sim">
+                <label for="noticias">Quero receber notícias sobre Persona</label>
+            </p>
+
+            <p>
+                <label for="nivel">Quanto você gosta da série?</label><br>
+                <input type="range" id="nivel" name="nivel" min="0" max="10">
+            </p>
+
+            <p>
+                <label for="mensagem">Mensagem:</label><br>
+                <textarea id="mensagem" name="mensagem" rows="5" cols="45"></textarea>
+            </p>
+        </fieldset>
+
+        <br>
+
+        <center>
+            <input type="submit" value="Enviar cadastro">
+            <input type="reset" value="Limpar formulário">
+        </center>
+    </form>
+
+    <hr>
+
+    <center>
+        <p>
+            <a href="TrabalhoPersona.html">Voltar para a página inicial</a>
+        </p>
+    </center>
+
+</body>
+</html>
